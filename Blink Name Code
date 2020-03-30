@@ -1,0 +1,40 @@
+int led1 = A5; 
+
+int led2 = D7; 
+
+void line(){
+  digitalWrite(led1, HIGH);
+  digitalWrite(led2, HIGH);
+  delay(1000);
+}
+void dot(){
+  digitalWrite(led1, LOW);
+  digitalWrite(led2, LOW);
+  delay(500);   
+}
+void setup() {
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+}
+
+
+void loop() {
+line();
+dot();
+dot();
+
+dot();
+line();
+
+dot();
+dot();
+line();
+
+dot();
+dot();
+
+line();
+dot();
+dot();
+}
+
